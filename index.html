@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Julia Huerta</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header,
+        nav,
+        footer {
+            background-color: #950101;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header h1,
+        footer p {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #444;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            width: 100%;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #950101;
+            transition: background-color 0.3s ease;
+        }
+
+        main {
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #950101;
+            margin-bottom: 1rem;
+        }
+
+        .slider-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider-content {
+            display: flex;
+            transition: transform 1s ease;
+        }
+
+        .slider-item {
+            flex: 0 0 100%;
+        }
+
+        .slider-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sección de encabezado del sitio -->
+    <header>
+        <h1>Welcome to my Portfolio</h1>
+        <p>Julia Huerta</p>
+    </header>
+
+    <!-- Barra de navegación con enlaces -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li>
+                <a href="#contact">Contact</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/f.phooo/">Instagram</a></li>
+                    <li><a href="tel:6188382148">Phone</a></li>
+                    <li><a href="#location">Address</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main id="inicio">
+        <section>
+            <img src="Imagen 10.jpg" alt="Imagen 10" width="300" height="500">
+        </section>
+
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>Hola, soy Julia Huerta, una diseñadora digital de 22 años con una profunda pasión por la fotografía y el diseño visual. Actualmente, estudio en la Universidad Tecnológica de Durango, donde estoy perfeccionando mis habilidades y conocimientos en el campo del diseño digital.
+
+Mi viaje en el diseño comenzó desde una edad temprana, cuando me fascinó la forma en que las imágenes y los gráficos pueden comunicar ideas poderosas y emocionales. A lo largo de los años, he trabajado en una variedad de proyectos, desde diseño de interfaces de usuario hasta creación de contenido visual para redes sociales.
+
+Mi enfoque se basa en la combinación de estética y funcionalidad. Me esfuerzo por crear diseños que no solo sean visualmente atractivos, sino que también ofrezcan una experiencia de usuario intuitiva y agradable. Mi habilidad para capturar la esencia de una idea a través de la fotografía y el diseño me ha permitido colaborar con diversos clientes, ayudándolos a transformar sus visiones en realidades visuales impactantes.
+
+Además de mi trabajo como diseñadora, la fotografía es una gran parte de mi vida. Me encanta explorar diferentes estilos y técnicas fotográficas, y siempre estoy en busca de nuevas formas de capturar la belleza del mundo que me rodea. Creo que la fotografía es una extensión natural de mi trabajo de diseño, ya que ambas disciplinas requieren una atención meticulosa a los detalles y una comprensión profunda del impacto visual.
+
+Estoy emocionada por las oportunidades futuras y abierta a nuevas colaboraciones que me permitan seguir creciendo y aprendiendo en el campo del diseño digital y la fotografía.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="slider-container">
+                <div class="slider-content">
+                    <div class="slider-item">
+                        <img src="Imagen 1.jpeg" alt="Imagen 1">
+                    </div>
+                    <div class="slider-item">
+                        <img src="Imagen 2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="slider-item">
+                        <img src="Imagen 3.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="slider-item">
+                        <img src="Imagen 4.jpg" alt="Imagen 4">
+                    </div>
+                     <img src="Imagen 5.jpeg" alt="Imagen 5">
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section id="contact">
+
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.1579132668608!2d-104.61828212390922!3d23.99020017952665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb833980d018d%3A0x735210d1bc20e6ad!2sUniversidad%20Tecnol%C3%B3gica%20de%20Durango%20BIS!5e0!3m2!1ses-419!2smx!4v1721344980454!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <!-- Pie de página del sitio -->
+    <footer>
+        <p>&copy; 2024 My first website</p>
+    </footer>
+
+    <!-- JavaScript para Slider -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slider-item");
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            setTimeout(() => {
+                slideIndex++;
+                showSlides();
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
